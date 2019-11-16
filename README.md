@@ -2,7 +2,7 @@
 November 16th 2019
 
 ### Project Title
-Bikeshare GitHub Project
+Bikeshare GitHub
 
 ### Description
 This purpose of this project is to simulate a realistic workflow to refactor my previous BikeShare project using Git.
