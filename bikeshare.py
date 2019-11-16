@@ -16,7 +16,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
-Months = ('jan', 'feb', 'mar', 'apr', 'may', 'jun')
+Months = ('january', 'february', 'march', 'april', 'may', 'june')
 Days = ('sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday')
 
 # Dictionary used to reference user input as integer to actual weekday name    
@@ -56,7 +56,7 @@ def get_filters():
         # While loop to handle any inputs other than correct month name from Months list.
         # Used .casefold() to remove case sensitivity
         while True:
-            month = input("\nWhich month? Jan, Feb, Mar, Apr, May, or Jun?\n").casefold()
+            month = input("\nWhich month? January, February, March, April, May, or June?\n").casefold()
             if month in Months:
                 break
             print('\nOops! Please make sure you have spelled the month correctly\n')
@@ -71,7 +71,7 @@ def get_filters():
           # While loop to handle any inputs other than correct month name from Months list.
         # Used .casefold() to remove case sensitivity
         while True:
-            month = input("\nWhich month? Jan, Feb, Mar, Apr, May, or Jun?\n").casefold()
+            month = input("\nWhich month? January, February, March, April, May, or June?\n").casefold()
             if month in Months:
                 break
             print('\nOops! Please make sure you have spelled the month correctly\n')
@@ -236,7 +236,7 @@ def user_stats(df):
     start_timebirthyear = time.time()
     # Used try statement to handle KeyError incase user filtered by city that does not have "Birth Year" column
     try:
-        print ('Oldest: ' + str(int(df['Birth Year'].min())) + '\nYoungest: ' + str(int(df['Birth Year'].max())) + '\nMost Popular: ' + str(int(df['Birth Year'].mode())))
+        print ('Oldest: ' + str(df['Birth Year'].min()) + '\nYoungest: ' + str(df['Birth Year'].max()) + '\nMost Popular: ' + str(df['Birth Year'].mode()))
     except KeyError:
         print ('No birth year data to share.\nNone')
     print ("That took %s seconds." % (time.time() - start_timebirthyear))
