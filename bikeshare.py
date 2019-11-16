@@ -33,7 +33,7 @@ def get_filters():
     Cities = ('chicago', 'new york', 'washington')
     
     
-    print('\nHello! Let\'s explore some US bikeshare data!')
+    print('\nYo Yo! Let\'s explore some US bikeshare data!')
 
     # While loop to handle any inputs other than "Chicago", "New York", or "Washington".
     # Used .casefold() to remove case sensitivity
@@ -236,7 +236,7 @@ def user_stats(df):
     start_timebirthyear = time.time()
     # Used try statement to handle KeyError incase user filtered by city that does not have "Birth Year" column
     try:
-        print ('Oldest: ' + str(int(df['Birth Year'].min())) + '\nYoungest: ' + str(int(df['Birth Year'].max())) + '\nMost Popular: ' + str(int(df['Birth Year'].mode())))
+        print ('Oldest: ' + str(df['Birth Year'].min()) + '\nYoungest: ' + str(df['Birth Year'].max()) + '\nMost Popular: ' + str(df['Birth Year'].mode()))
     except KeyError:
         print ('No birth year data to share.\nNone')
     print ("That took %s seconds." % (time.time() - start_timebirthyear))
