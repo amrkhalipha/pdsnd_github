@@ -10,11 +10,19 @@ This purpose of this project is to simulate a realistic workflow to refactor my 
 The project will include:
 1) Setting Up a Repository
 2) Improving Documentation
-3) Refactoring Code 
+3) Refactoring Code
 4) Merging Branches
 
 ### Files used
-Include the files used
+Data Files:
+These files include the bikesharing data for the cities of Chicago, Washington, and New York City
+a) chicago.csv
+b) washington.csv
+c) new_york_city.csv
+
+Code File:
+bikeshare.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Forked Repository:
+https://github.com/udacity/pdsnd_github.git
