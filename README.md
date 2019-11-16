@@ -5,7 +5,13 @@ November 16th 2019
 Bikeshare GitHub Project
 
 ### Description
-Describe what your project is about and what it does
+This purpose of this project is to simulate a realistic workflow to refactor my previous BikeShare project using Git.
+
+The project will include:
+1) Setting Up a Repository
+2) Improving Documentation
+3) Refactoring Code 
+4) Merging Branches
 
 ### Files used
 Include the files used
