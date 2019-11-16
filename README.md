@@ -15,7 +15,7 @@ The project will include:
 
 ### Files used
 Data Files:
-These files include the bikesharing data for the cities of Chicago, Washington, and New York City
+These files include the bikeshare data for the cities of Chicago, Washington, and New York City
 a) chicago.csv
 b) washington.csv
 c) new_york_city.csv
