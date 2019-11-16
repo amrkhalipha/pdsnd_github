@@ -33,7 +33,7 @@ def get_filters():
     Cities = ('chicago', 'new york', 'washington')
     
     
-    print('\nHello! Let\'s explore some US bikeshare data!')
+    print('\nYo Yo! Let\'s explore some US bikeshare data!')
 
     # While loop to handle any inputs other than "Chicago", "New York", or "Washington".
     # Used .casefold() to remove case sensitivity
