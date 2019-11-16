@@ -16,7 +16,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
-Months = ('january', 'february', 'march', 'april', 'may', 'june')
+Months = ('jan', 'feb', 'mar', 'apr', 'may', 'jun')
 Days = ('sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday')
 
 # Dictionary used to reference user input as integer to actual weekday name    
@@ -56,7 +56,7 @@ def get_filters():
         # While loop to handle any inputs other than correct month name from Months list.
         # Used .casefold() to remove case sensitivity
         while True:
-            month = input("\nWhich month? January, February, March, April, May, or June?\n").casefold()
+            month = input("\nWhich month? Jan, Feb, Mar, Apr, May, or Jun?\n").casefold()
             if month in Months:
                 break
             print('\nOops! Please make sure you have spelled the month correctly\n')
@@ -71,7 +71,7 @@ def get_filters():
           # While loop to handle any inputs other than correct month name from Months list.
         # Used .casefold() to remove case sensitivity
         while True:
-            month = input("\nWhich month? January, February, March, April, May, or June?\n").casefold()
+            month = input("\nWhich month? Jan, Feb, Mar, Apr, May, or Jun?\n").casefold()
             if month in Months:
                 break
             print('\nOops! Please make sure you have spelled the month correctly\n')
